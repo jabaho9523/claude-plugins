@@ -1,6 +1,6 @@
 ---
 name: [slug]
-goal: "[one line]"
+goal: ""              # set by scope
 mode: lite            # lite | full
 created: [YYYY-MM-DD]
 updated: [YYYY-MM-DD]

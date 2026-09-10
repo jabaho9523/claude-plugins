@@ -1,5 +1,6 @@
 {
   "name": "project",
+  "displayName": "🧭 Project Workflow",
   "version": "0.1.0",
   "description": "End-to-end project workflow for building with Claude: setup, scope, plan, brief, gate, review, log, roadmap, handover, closeout. Lite mode for single tasks, full mode with stage gates for multi-session builds.",
   "author": { "name": "Jacob Bakholm" },
