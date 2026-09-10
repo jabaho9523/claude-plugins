@@ -5,13 +5,15 @@ v[N], updated [YYYY-MM-DD]. Mode: [lite | full]. Source: `planning/roadmap.yaml`
 Status words: **done** (green, frozen scope), **caveats** (yellow, works with named gaps), **focus** (red, where attention goes), **planned** (not started).
 
 ## Now
-- [id] [name]: [gate or verify] ([status])
+- [id] [name]: [first clause of the gate or verify] ([status])
 
 ## Next
-- [id] [name]: [gate or verify]
+- [id] [name]: [first clause of the gate or verify]
 
 ## Later
 - [id] [name]
+
+(Full gate text lives in the Stages table below, not in these lists.)
 
 ## Done
 - [id] [name]: [evidence, source and date]

@@ -28,12 +28,14 @@ Propose status changes as one short list, for example `S2 red to yellow: 3 of 4 
 - **Green needs `evidence`** with source and date. No evidence, no green; say what evidence would do it.
 - **Yellow needs at least one `caveats` line.**
 - **Never move backwards silently.** A green whose evidence no longer holds goes to yellow with a caveat and a note.
+- **A ref to a file that does not exist yet is intent, not evidence.**
+- **`Decision:` and `Finding:` rows in `PROGRESS.md`** are read too. One that contradicts a gate or stage is reported as needing re-plan, not silently applied.
 
 Ask for one confirmation of the whole batch, apply it, bump `version`, set `updated`.
 
 ## 3. Render
 
-- `ROADMAP.md` from `${CLAUDE_PLUGIN_ROOT}/templates/ROADMAP.md`: Now (focus items), Next, Later, Done, Ideas, Invariants. Full mode adds the stages table.
+- `ROADMAP.md` from `${CLAUDE_PLUGIN_ROOT}/templates/ROADMAP.md`: Now (focus items), Next, Later, Done, Ideas, Invariants. The lists carry the stage name and the first clause of its gate only; the full gate text goes in the stages table (full mode).
 - Full mode: `roadmap.html` from `${CLAUDE_PLUGIN_ROOT}/templates/roadmap.html`. First copy any existing file to `planning/roadmap-versions/roadmap-YYYY-MM-DD-v<N>.html`. Fill every `{{placeholder}}`; one stage box per stage, in `focus` order, with status class, chip text, gate, evidence or caveats, refs. Footer lists the sources used in step 2 and appends one changelog line for this version.
 - Status is shown with an icon and a word as well as a colour, never colour alone.
 

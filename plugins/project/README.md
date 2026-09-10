@@ -20,13 +20,13 @@ The switch is a field in `planning/project.md`. Run `/project:setup` again to ch
 | `setup` | v0.1 | Writes `planning/project.md`, stands up the doc set |
 | `scope` | v0.1 | Discussion that ends in `planning/SCOPE.md` |
 | `plan` | v0.1 | `SCOPE.md` to `roadmap.yaml`: tasks (lite) or stages with gates (full) |
-| `brief` | planned | Next code brief plus paste-ready prompt (full) |
-| `gate` | planned | Verify current stage against its exit criteria, iterate, report |
-| `review` | planned | Check a landed change against its brief |
+| `brief` | v0.1 | Next code brief plus paste-ready prompt (full) |
+| `gate` | v0.1 | Check the current stage against its gate, record evidence, advance on sign-off |
+| `review` | v0.1 | Check a landed change against its brief, log the verdict |
 | `log` | v0.1 | Append a row to `PROGRESS.md` |
 | `roadmap` | v0.1 | Reconcile `roadmap.yaml`, render `ROADMAP.md` and the HTML map, park ideas (`roadmap <name> add ...`) |
-| `handover` | planned | Write or resume from `HANDOVER.md` |
-| `closeout` | planned | End-of-session ritual: log, roadmap, handover, open loops |
+| `handover` | v0.1 | Write `HANDOVER.md`, or resume from it |
+| `closeout` | v0.1 | End-of-session ritual: log, roadmap, handover, open loops |
 
 ## Install
 
@@ -53,12 +53,23 @@ project-workflow/
     setup/SKILL.md
     setup/references/connectors.md
     scope/SKILL.md
+    plan/SKILL.md
+    brief/SKILL.md
+    review/SKILL.md
+    gate/SKILL.md
+    log/SKILL.md
+    roadmap/SKILL.md
+    handover/SKILL.md
+    closeout/SKILL.md
   templates/          copied into a project by setup
     project.md
     SCOPE.md
     roadmap.yaml
+    ROADMAP.md
+    roadmap.html
     PROGRESS.md
     HANDOVER.md
+    brief.md
     CLAUDE.md
   defaults/
     way-of-working.md   generic playbook, overridden by a path in project.md
