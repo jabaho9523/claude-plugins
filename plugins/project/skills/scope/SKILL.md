@@ -1,6 +1,6 @@
 ---
 name: scope
-description: 🧭 Discuss a project and write planning/SCOPE.md. Use when the user says "scope <name>", "let's scope this", "define the project", "I want to build X", or asks for a plan when no agreed scope exists. Short by default (one round of questions); goes deeper only when the project turns out to be a multi-session build.
+description: 🧭 Discuss a project and write planning/SCOPE.md. Use when the user says "scope [name]", "let's scope this", "define the project", "I want to build X", or asks for a plan when no agreed scope exists. Short by default (one round of questions); goes deeper only when the project turns out to be a multi-session build.
 ---
 
 # Scope

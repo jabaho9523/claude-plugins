@@ -1,6 +1,6 @@
 ---
 name: roadmap
-description: 🧭 Show and update a project's roadmap. Use when the user says "roadmap <name>", "where are we", "what's next", "status", "update the roadmap", or "add idea: ..." / "feature request: ...". Reads PROGRESS.md and the verify baseline, reconciles planning/roadmap.yaml, renders ROADMAP.md (plus roadmap.html in full mode), and answers with what is next.
+description: 🧭 Show and update a project's roadmap. Use when the user says "roadmap [name]", "where are we", "what's next", "status", "update the roadmap", or "add idea: ..." / "feature request: ...". Reads PROGRESS.md and the verify baseline, reconciles planning/roadmap.yaml, renders ROADMAP.md (plus roadmap.html in full mode), and answers with what is next.
 ---
 
 # Roadmap

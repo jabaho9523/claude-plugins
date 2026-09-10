@@ -1,6 +1,6 @@
 ---
 name: plan
-description: 🧭 Turn an agreed SCOPE.md into planning/roadmap.yaml: an ordered task list in lite mode, stages with checkable gates in full mode. Use when the user says "plan <name>", "let's plan", "break this down", "what are the stages", or when scope is agreed and no roadmap exists yet. Re-run to re-plan after a gate fails or to promote parked ideas.
+description: 🧭 Turn an agreed SCOPE.md into planning/roadmap.yaml: an ordered task list in lite mode, stages with checkable gates in full mode. Use when the user says "plan [name]", "let's plan", "break this down", "what are the stages", or when scope is agreed and no roadmap exists yet. Re-run to re-plan after a gate fails or to promote parked ideas.
 ---
 
 # Plan

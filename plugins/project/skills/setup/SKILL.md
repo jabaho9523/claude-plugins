@@ -1,6 +1,6 @@
 ---
 name: setup
-description: 🧭 Create the planning files for a new project. Use when the user says "new project", "set up <name>", "start a project called X", or when another project skill finds no planning/project.md for the named project. Takes the project name as its only input and asks nothing else.
+description: 🧭 Create the planning files for a new project. Use when the user says "new project", "set up [name]", "start a project called X", or when another project skill finds no planning/project.md for the named project. Takes the project name as its only input and asks nothing else.
 ---
 
 # Setup

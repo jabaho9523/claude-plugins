@@ -1,6 +1,6 @@
 ---
 name: log
-description: 🧭 Append a dated entry to a project's planning/PROGRESS.md. Use when the user says "log <name> ...", "log this", "note that we shipped X", "progress: ...", "decision: ...", or when a change lands in a project that uses this plugin. PROGRESS.md is the single tracker per project; never create another.
+description: 🧭 Append a dated entry to a project's planning/PROGRESS.md. Use when the user says "log [name] ...", "log this", "note that we shipped X", "progress: ...", "decision: ...", or when a change lands in a project that uses this plugin. PROGRESS.md is the single tracker per project; never create another.
 ---
 
 # Log
