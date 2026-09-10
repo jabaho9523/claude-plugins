@@ -30,6 +30,7 @@ stages: []
 #    status: red
 #    gate: "[checkable exit criterion]"
 #    gate_kind: executable      # executable | judgment
+#    rubric: []                 # judgment gates only: 3 lines a fresh reader could score
 #    evidence: null             # filled by the gate skill on pass, e.g. "validate.py 52/52, 2026-09-12"
 #    refs: []
 #    caveats: []                # why it is yellow, if it is
