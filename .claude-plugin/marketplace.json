@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "jacob-plugins",
+  "owner": { "name": "Jacob Bakholm" },
+  "metadata": {
+    "description": "Personal Claude plugins: project workflow, scope, stage gates, roadmap",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "project",
+      "source": "./plugins/project",
+      "description": "🧭 Project workflow: setup, scope, plan, gate, roadmap. Lite mode for single tasks, full mode with stage gates.",
+      "category": "productivity"
+    }
+  ]
+}
