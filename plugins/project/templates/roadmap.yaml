@@ -1,0 +1,44 @@
+# Single source for ROADMAP.md and (full mode) roadmap.html.
+# The roadmap skill reads PROGRESS.md, git log, and the verify baseline,
+# then updates this file. Edit by hand if you like; the skill keeps it consistent.
+#
+# status values: green (done, frozen scope) | yellow (works, named caveats) |
+#                red (focus, not functional) | planned (not started)
+# A status may only move to green with a non-empty `evidence` line naming its source.
+
+project: [slug]
+mode: lite            # lite | full
+updated: [YYYY-MM-DD]
+version: 1
+
+invariants:           # what must never break, checked by every gate
+  - "[e.g. existing tests stay green]"
+
+# ---- lite mode: a flat list ------------------------------------------------
+tasks:
+  - id: T1
+    name: "[task]"
+    status: planned
+    verify: "[how we know it is done]"
+    evidence: null
+    refs: []          # issue numbers, PRs, ADRs
+
+# ---- full mode: stages with gates -------------------------------------------
+stages: []
+#  - id: S1
+#    name: "[stage]"
+#    status: red
+#    gate: "[checkable exit criterion]"
+#    gate_kind: executable      # executable | judgment
+#    evidence: null             # filled by the gate skill on pass, e.g. "validate.py 52/52, 2026-09-12"
+#    refs: []
+#    caveats: []                # why it is yellow, if it is
+
+focus: []             # ordered ids of what gets attention now (the map's "focus, in order")
+
+ideas:                # intake for future upgrades; promoted into tasks/stages by plan, never directly
+  - date: [YYYY-MM-DD]
+    source: "[where it came from: Slack thread, colleague, self]"
+    text: "[one line]"
+    status: parked    # parked | promoted | rejected
+    note: null        # why rejected, or which stage it became
