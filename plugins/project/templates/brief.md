@@ -28,6 +28,7 @@
 ## 7. Acceptance (Code self-checks before declaring done)
 - [ ] [specific, testable]
 - [ ] [...]
+- [ ] Verify command green on [main_branch] after the merge
 - [ ] `PROGRESS.md` row appended with refs (S#, Brief NN)
 
 ## 8. Build / run split (only if relevant)
@@ -45,15 +46,28 @@
 You're working in this repo as the builder. Implement Brief NN at
 planning/briefs/[filename].md.
 
-- Read planning/project.md, planning/SCOPE.md and planning/ROADMAP.md first.
+Before you start:
+- Read planning/project.md, planning/SCOPE.md and planning/ROADMAP.md.
+- If the working tree has uncommitted changes under planning/, commit them on
+  [main_branch] as "planning: <today>". Uncommitted changes anywhere else: stop
+  and report, do not proceed.
+- Create a short-lived branch off [main_branch] named brief-NN-[slug].
+
+Build:
 - For a multi-file or architectural change, use Plan Mode first: read the
   referenced files, propose a plan, make no edits, and wait for approval.
-- Then implement on a short-lived branch off [main_branch], one focused scope.
-- Keep the invariants in section 5. Verify per section 6: [verify command]
-  must pass.
+- Implement one focused scope. Keep the invariants in section 5.
+- Verify per section 6: [verify command] must pass.
 - Commit with descriptive messages. No AI attribution trailers.
-- When it lands, append a dated row to planning/PROGRESS.md (refs: S#, Brief NN).
 
-Return: files added or changed and why, verification output, and any open
-questions or blockers.
+Close the loop:
+- git switch [main_branch] && git merge --ff-only brief-NN-[slug]
+- Run [verify command] again on [main_branch]; it must pass.
+- git branch -d brief-NN-[slug]
+- If --ff-only refuses or the verify fails on [main_branch], stop and report
+  the exact error. Do not rebase, force, or push.
+- Append a dated row to planning/PROGRESS.md (refs: S#, Brief NN) and commit it.
+
+Return: files added or changed and why, verification output from both runs,
+the merge result, and any open questions or blockers.
 ```

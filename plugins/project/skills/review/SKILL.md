@@ -13,21 +13,22 @@ Which project and which brief (argument, or infer from the pasted output; if unc
 
 ## 1. Evidence
 
-What the user pasted (Code's summary, test output, git log) and the files the brief says should now exist. On the control surface, read files and never run git. On the code surface you may run the verify command and `git log --oneline -n 20`, read-only.
+What the user pasted (Code's summary, test output from both verify runs, merge result) and the files the brief says should now exist. On the control surface, read files and never run git. On the code surface you may run the verify command and `git log --oneline -n 20`, read-only.
 
-"Code says the tests passed" without the output is not evidence. Mark it "can't tell" and ask for the output.
+"Code says the tests passed" without the output is not evidence. Mark it "can't tell" and hand the user the exact command to get it, as a numbered step with one block.
 
 ## 2. Check, in this order
 
 - **Acceptance**, item by item: met, not met, or can't tell, each with the file or output line that shows it.
 - **Invariants**: any violated, any unverifiable from the evidence.
-- **Verify step**: was the exact command from the brief run, and did it pass, per the pasted output.
+- **Verify step**: was the exact command from the brief run on the branch and again on the main branch after the merge, and did both pass, per the pasted output.
+- **Merge**: did Code report a clean `--ff-only` merge and branch deletion? A stop-and-report from Code is a valid outcome, not a failure; it becomes the first rework item.
 - **Scope creep**: anything done the brief did not ask for.
 - **Deviations** Code reported, and whether each is acceptable.
 
 ## 3. Verdict
 
-One of: **accepted**, **accepted with follow-ups**, **rework**. Rework lists the exact items to fix. Follow-ups become a note for the next brief.
+One of: **accepted**, **accepted with follow-ups**, **rework**. Rework lists the exact items to fix and ends with the Code prompt for the rework, paste-ready. Follow-ups become a note for the next brief.
 
 ## 4. Explain
 
@@ -41,10 +42,11 @@ Four lines for the user, plain language: what changed, why it matters, what it a
 
 ## Reply
 
-Verdict line, the four-line explanation, what is next. Rework items as a short list when there are any.
+Verdict line, the four-line explanation, what is next. Rework items as a short list plus the Code prompt when there are any.
 
 ## Rules
 
 - Do not accept what you cannot see.
 - Never run git from the control surface.
+- Anything the user must do in Code or a terminal follows the hand-off format in the playbook.
 - Follow the playbook named in `project.md` for tone.

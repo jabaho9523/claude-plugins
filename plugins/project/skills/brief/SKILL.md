@@ -25,11 +25,11 @@ Name the change that moves the current stage closest to its gate. If the stage n
 4. **Spec**: logic and data separate from presentation.
 5. **Must-not-break**: the roadmap invariants that apply plus stage-specific ones. Anything that, if it moves, means stop and flag.
 6. **How to verify**: the exact command and what a pass looks like. Mandatory; a change with no proof is not ready to brief.
-7. **Acceptance**: a checklist Code self-checks before declaring done.
+7. **Acceptance**: a checklist Code self-checks before declaring done, including verify green on the main branch after the merge.
 8. **Build / run split**: only when something touches a database, network, secrets, or the live machine.
 9. **Open questions**: what Code confirms before building, or "none".
 
-End with the paste-ready Code prompt in one fenced block: read the planning docs first, Plan Mode before edits for multi-file work, branch off `main_branch`, one scope, keep the invariants, run the verify command, descriptive commits with no AI attribution trailers, append a `PROGRESS.md` row with refs (stage id, brief NN) when it lands, and return a summary plus verification output.
+End with the paste-ready Code prompt from the template, filled in: commit pending `planning/` edits first, branch `brief-NN-slug`, Plan Mode for multi-file work, verify, commit, `--ff-only` merge, verify again on main, delete the branch, stop on any refusal, never push. Code closes the loop; the user is not asked to merge.
 
 Never put a computed figure in a brief. If a number matters, tell Code to print it with its source. Reference confidential files by path; never paste their contents.
 
@@ -39,9 +39,10 @@ Does the brief move the stage toward its gate as written? Can Code verify it alo
 
 ## 4. Log and reply
 
-Append to `PROGRESS.md`: "Brief NN written (S#: title)". Reply with the file path, one line, followed by the paste-ready prompt block so the user can copy it straight from chat.
+Append to `PROGRESS.md`: "Brief NN written (S#: title)". Reply as numbered hand-off steps per the playbook: (1) the brief path, (2) Terminal: `cd` to the repo and start Claude Code, one block, (3) Code prompt: the paste-ready block, (4) what Code should return, and that the next step is `/project:review`.
 
 ## Rules
 
 - Never run git. Brief writes only into `planning/briefs/` and `PROGRESS.md`.
+- Anything the user must do in Code or a terminal follows the hand-off format in the playbook: numbered steps, one copy-ready block each, expected result stated.
 - Follow the playbook named in `project.md` for tone.

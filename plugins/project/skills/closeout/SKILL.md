@@ -11,14 +11,14 @@ description: 🧭 End-of-session ritual for a project: log today's work, reconci
 1. **Log.** Anything shipped, decided, or found today that is not yet in `PROGRESS.md` goes in as rows, following `${CLAUDE_PLUGIN_ROOT}/skills/log/SKILL.md`. Decisions prefixed `Decision:`, discoveries `Finding:`. If nothing shipped, write nothing and say so.
 2. **Roadmap.** Steps 2 to 4 of `${CLAUDE_PLUGIN_ROOT}/skills/roadmap/SKILL.md`: reconcile, render, state what is next. A ref to a file that does not exist yet is intent, not evidence.
 3. **Handover.** Write mode of `${CLAUDE_PLUGIN_ROOT}/skills/handover/SKILL.md`.
-4. **Open loops.** One line each: uncommitted Code work, verify steps not yet run, briefs written but not yet executed, gates awaiting sign-off and from whom, questions with owners still open.
+4. **Open loops.** One line each: uncommitted Code work, verify steps not yet run, briefs written but not yet executed, gates awaiting sign-off and from whom, questions with owners still open. Where a loop closes with a command or a Code prompt, give it as a numbered hand-off step with one copy-ready block.
 
 ## Reply
 
-Eight lines at most: files updated, current stage and gate status, what is next, the open loops.
+Eight lines at most, plus any hand-off blocks: files updated, current stage and gate status, what is next, the open loops.
 
 ## Rules
 
 - Never invent progress. The log records what happened, not what was intended.
 - Never run git.
-- Follow the playbook named in `project.md` for tone.
+- Follow the playbook named in `project.md` for tone and hand-off format.

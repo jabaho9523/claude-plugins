@@ -26,12 +26,12 @@ playbook: default       # "default" uses the plugin's defaults/way-of-working.md
 context_files: []       # files every skill should read for background, e.g. company or product descriptions
 connectors: []          # - name: slack
                         #   use: "idea intake from #project-x"
-autonomy:
-  auto: [read files, run tests, write to planning/]
+autonomy:               # applies to the execution surface; the control surface never runs git
+  auto: [read files, run tests, write to planning/, commit on a brief branch, commit pending planning/ edits on main, merge --ff-only after verify is green, delete the merged branch]
   confirm: [edit existing source files, add modules]
-  always_confirm: [push, merge, delete, change config or auth or secrets]
+  always_confirm: [push, rebase, force, history rewrite, delete anything other than a merged branch, change config or auth or secrets]
 gates:                  # full only
-  sign_off: user        # who confirms a stage has passed: user | <name>
+  sign_off: user        # who confirms a stage has passed: user | <name>; a stage can override in roadmap.yaml
   current_stage: null   # id from roadmap.yaml, advanced only on confirmed pass
 ---
 

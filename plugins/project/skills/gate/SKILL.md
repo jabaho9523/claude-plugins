@@ -13,7 +13,7 @@ Which project (argument or ask). `project.md` (`gates.current_stage`, `gates.sig
 
 ## 1. Executable gate
 
-On the code surface: run the verify command, read the baseline file if one is named, run nothing else. On the control surface: ask the user to paste the output, or read a results file the gate names; never run git or compute a result yourself.
+On the code surface: run the verify command, read the baseline file if one is named, run nothing else. On the control surface: never run git or compute a result yourself. Give the user the hand-off steps instead: Terminal, `cd` to the repo, the exact verify command in one block, and ask them to paste the output back (or read a results file the gate names).
 
 Split the gate into clauses. For each clause and each invariant: **pass**, **fail**, or **no evidence**, with the output line or file that decides it.
 
@@ -23,7 +23,7 @@ Gather the artefacts the gate names (docs, files, outputs). Score each rubric li
 
 ## 3. Iterate (on request)
 
-When the user asks the execution surface to work the gate, the builder may attempt fixes and re-check up to 3 times (the user can raise the number). Log each attempt in `PROGRESS.md`. The gate text does not change between attempts.
+When the user asks the execution surface to work the gate, write the Code prompt for it: the gate text verbatim, the verify command, "attempt, verify, iterate up to 3 times, log each attempt in PROGRESS.md, stop and report after the third". The user can raise the number. The gate text does not change between attempts.
 
 ## 4. Outcome
 
@@ -34,11 +34,11 @@ When the user asks the execution surface to work the gate, the builder may attem
 
 ## Reply
 
-A short table, one row per clause or rubric line with its result and source. Then the outcome line and what is next.
+A short table, one row per clause or rubric line with its result and source. Then the outcome line and what is next. Any step the user must run outside this surface comes as numbered hand-off steps with one copy-ready block each.
 
 ## Rules
 
 - Never green without an evidence line that names a source and a date.
 - Whoever built the stage does not certify it alone; that is what the fresh reader and the sign-off are for.
 - Never run git from the control surface. Never compute a figure; copy it from the output.
-- Follow the playbook named in `project.md` for tone.
+- Follow the playbook named in `project.md` for tone and hand-off format.
