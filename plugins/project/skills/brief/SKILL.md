@@ -9,7 +9,7 @@ One brief is one shippable change toward the current stage's gate. If it needs t
 
 ## 0. Read
 
-Which project (argument or ask). Then `project.md` (repo, verify command, main branch), `SCOPE.md` (glossary, constraints, non-goals), `roadmap.yaml` (current stage, its gate, invariants), `PROGRESS.md` (what has landed, review findings), and `planning/briefs/` (next number, what is already covered). Lite project: stop and say briefs are for full mode; describe the task inline instead.
+Resolve the project per `${CLAUDE_PLUGIN_ROOT}/shared/resolve-project.md`. Then `project.md` (repo, verify command, main branch), `SCOPE.md` (glossary, constraints, non-goals), `roadmap.yaml` (current stage, its gate, invariants), `PROGRESS.md` (what has landed, review findings), and `planning/briefs/` (next number, what is already covered). Lite project: stop and say briefs are for full mode; describe the task inline instead.
 
 ## 1. Pick the change
 

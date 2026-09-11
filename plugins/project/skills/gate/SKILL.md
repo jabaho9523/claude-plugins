@@ -9,7 +9,7 @@ The gate was written by `plan` before the stage started. This skill checks the w
 
 ## 0. Read
 
-Which project (argument or ask). `project.md` (`gates.current_stage`, `gates.sign_off`, repo, verify command, baseline), `roadmap.yaml` (the stage: gate, gate_kind, rubric, sign_off, invariants), `PROGRESS.md` rows for the stage.
+Resolve the project per `${CLAUDE_PLUGIN_ROOT}/shared/resolve-project.md`. `project.md` (`gates.current_stage`, `gates.sign_off`, repo, verify command, baseline), `roadmap.yaml` (the stage: gate, gate_kind, rubric, sign_off, invariants), `PROGRESS.md` rows for the stage.
 
 ## 1. Executable gate
 

@@ -7,7 +7,7 @@ description: 🧭 End-of-session ritual for a project: log today's work, reconci
 
 ## Steps
 
-0. **Which project.** Argument or ask. If several projects were touched this session, run the steps for each in turn, naming which one you are on.
+0. **Which project.** Follow `${CLAUDE_PLUGIN_ROOT}/shared/resolve-project.md`. If several projects were touched this session, run the steps for each in turn, naming which one you are on.
 1. **Log.** Anything shipped, decided, or found today that is not yet in `PROGRESS.md` goes in as rows, following `${CLAUDE_PLUGIN_ROOT}/skills/log/SKILL.md`. Decisions prefixed `Decision:`, discoveries `Finding:`. If nothing shipped, write nothing and say so.
 2. **Roadmap.** Steps 2 to 4 of `${CLAUDE_PLUGIN_ROOT}/skills/roadmap/SKILL.md`: reconcile, render, state what is next. A ref to a file that does not exist yet is intent, not evidence.
 3. **Handover.** Write mode of `${CLAUDE_PLUGIN_ROOT}/skills/handover/SKILL.md`.

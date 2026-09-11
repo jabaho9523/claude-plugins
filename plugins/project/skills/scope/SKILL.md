@@ -7,7 +7,7 @@ description: 🧭 Discuss a project and write planning/SCOPE.md. Use when the us
 
 ## 0. Which project
 
-Name from the argument (`/project:scope coloring-site`) or one question: "Which project?" Resolve `<name>/planning/project.md` under the current folder. If missing, offer `/project:setup <name>` and stop. Start every reply with `Project: <name>` so two projects in one session never blur.
+Follow `${CLAUDE_PLUGIN_ROOT}/shared/resolve-project.md`, then read `planning/project.md`.
 
 ## 1. Dump
 
@@ -30,7 +30,7 @@ One question: "Is this one or two sessions with a single verifiable outcome, or 
 
 Play the scope back in five lines and ask once: "Anything wrong or missing?" Apply corrections, then:
 
-1. Write `<name>/planning/SCOPE.md` from `${CLAUDE_PLUGIN_ROOT}/templates/SCOPE.md`, `status: agreed`. Drop the full-only sections in lite mode.
+1. Write `planning/SCOPE.md` from `${CLAUDE_PLUGIN_ROOT}/templates/SCOPE.md`, `status: agreed`. Drop the full-only sections in lite mode.
 2. Set `mode` and `goal` in `planning/project.md`.
 3. Append to `planning/PROGRESS.md`: "Scope agreed, v1."
 4. Full mode only: create `HANDOVER.md`, `briefs/`, `decisions/` from templates.

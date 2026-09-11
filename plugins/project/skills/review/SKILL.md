@@ -9,7 +9,7 @@ Review checks the work against the brief as written. It does not re-do the work,
 
 ## 0. Read
 
-Which project and which brief (argument, or infer from the pasted output; if unclear, ask which brief). Read the brief, `roadmap.yaml` (stage, gate, invariants), `project.md`.
+Resolve the project per `${CLAUDE_PLUGIN_ROOT}/shared/resolve-project.md`. Which brief: from the argument, or inferred from the pasted output; if unclear, ask. Read the brief, `roadmap.yaml` (stage, gate, invariants), `project.md`.
 
 ## 1. Evidence
 

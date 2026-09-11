@@ -9,7 +9,7 @@ description: 🧭 Show and update a project's roadmap. Use when the user says "r
 
 ## 0. Which project
 
-Argument or ask "Which project?". Read `project.md`, `roadmap.yaml`, `PROGRESS.md`. First line of every reply: `Project: <name>`.
+Follow `${CLAUDE_PLUGIN_ROOT}/shared/resolve-project.md`, then read `project.md`, `roadmap.yaml`, `PROGRESS.md`.
 
 ## 1. Intake (only when asked)
 

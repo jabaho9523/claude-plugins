@@ -9,7 +9,7 @@ Gates are written here, before any stage starts, by the planner rather than by w
 
 ## 0. Which project
 
-Argument (`/project:plan coloring-site`) or ask "Which project?". Read `<name>/planning/project.md`, `SCOPE.md`, `roadmap.yaml`. If `SCOPE.md` is not `status: agreed`, stop and point to `/project:scope <name>`. Start every reply with `Project: <name>`.
+Follow `${CLAUDE_PLUGIN_ROOT}/shared/resolve-project.md`, then read `project.md`, `SCOPE.md`, `roadmap.yaml`. If `SCOPE.md` is not `status: agreed`, stop and point to `/project:scope <name>`.
 
 ## 1. Lite mode
 
@@ -20,7 +20,7 @@ From Done-when and the scope, propose 3 to 10 tasks in order. Each task: `name`,
 Start from the Candidate stages in `SCOPE.md` and finalise:
 
 - **3 to 7 stages**, each a bounded context: one part of the domain, named in glossary terms, deliverable on its own.
-- **Per stage:** `gate` (the checkable exit criterion), `gate_kind` (`executable` or `judgment`), `refs`. A judgment gate also gets a `rubric` of 3 lines that a fresh reader could score.
+- **Per stage:** `gate` (the checkable exit criterion), `gate_kind` (`executable` or `judgment`), `refs`, optional `sign_off` when someone other than the default confirms it. A judgment gate also gets a `rubric` of 3 lines that a fresh reader could score.
 - **`invariants`:** what must never break across stages, from Constraints and Done-when.
 - **`focus`:** stage order.
 - **Repo:** if the work touches code and `repo.present` is false in `project.md`, ask for the path and the verify command and write them in. This is the only setup-type question plan asks.

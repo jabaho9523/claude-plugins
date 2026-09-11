@@ -9,7 +9,7 @@ Sessions degrade as they fill: earlier decisions get contradicted, rejected patt
 
 ## Write (default)
 
-1. Which project (argument or ask). Read `project.md`, `roadmap.yaml`, `PROGRESS.md`, the current `HANDOVER.md`, and `planning/briefs/`.
+1. Resolve the project per `${CLAUDE_PLUGIN_ROOT}/shared/resolve-project.md`. Read `project.md`, `roadmap.yaml`, `PROGRESS.md`, the current `HANDOVER.md`, and `planning/briefs/`.
 2. Write `planning/HANDOVER.md` from `${CLAUDE_PLUGIN_ROOT}/templates/HANDOVER.md`:
    - **Where we are**: one paragraph, current stage and its gate status.
    - **Shipped this session**: from today's `PROGRESS.md` rows and the chat.
@@ -24,7 +24,7 @@ Sessions degrade as they fill: earlier decisions get contradicted, rejected patt
 
 Triggered by "resume", "pick up", "read the handover".
 
-1. Read `HANDOVER.md`, `project.md`, `ROADMAP.md`, and the last ten `PROGRESS.md` rows.
+1. Resolve the project, then read `HANDOVER.md`, `project.md`, `ROADMAP.md`, and the last ten `PROGRESS.md` rows.
 2. Reply in five lines at most: project, current stage and gate status, last thing shipped, top loose end, proposed first task.
 3. If "Decided but not yet in the docs" is not empty, offer to write those into the docs first.
 4. Ask what to prioritise. Do not start work until the user confirms.

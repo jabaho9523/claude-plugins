@@ -10,7 +10,7 @@ One input, the project name. No interview. Everything about the project is gathe
 ## Steps
 
 1. **Name.** From the argument (`/project:setup coloring-site`). If missing, ask "Project name?" and nothing else.
-2. **Folder.** `<name>/` under the current folder (Cowork: the mounted folder; Code: the working directory). If `<name>/planning/project.md` already exists, say so and stop. Never create files in the home directory.
+2. **Folder.** Follow `${CLAUDE_PLUGIN_ROOT}/shared/resolve-project.md`. If a project with this name already exists, say so and stop. Otherwise the root is `./<name>/`. Never create files in the home directory.
 3. **Create** from `${CLAUDE_PLUGIN_ROOT}/templates/`, filling `name` and today's date, everything else at default:
    - `<name>/planning/project.md`
    - `<name>/planning/SCOPE.md` (status: draft)
