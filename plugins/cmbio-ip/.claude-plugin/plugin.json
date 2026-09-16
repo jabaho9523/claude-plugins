@@ -1,0 +1,8 @@
+{
+  "name": "cmbio-ip",
+  "displayName": "Cmbio IP",
+  "version": "0.1.0",
+  "description": "Cmbio invention disclosure and IP screening. Walks an employee through an interview and produces a signed-off invention disclosure form (IDF) for the IP owner; gives the IP owner a first-pass screen, scorecard and draft route decision.",
+  "author": { "name": "Jacob Bakholm" },
+  "keywords": ["ip", "patent", "invention disclosure", "idf", "trade secret", "cmbio"]
+}
