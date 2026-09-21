@@ -66,18 +66,25 @@ Ask about, in this order, in small groups:
 
 ## Block 2: what was uncertain (IDF section C1 to C4)
 
-Explain: this section exists for Skattestyrelsen. Danish R&D deductions need documentation that the work was novel, creative and had genuine technical or scientific uncertainty when it started. A disclosure that never becomes a patent can still earn the deduction if this section is good.
+Explain: this section exists for Skattestyrelsen. Danish R&D deductions under ligningsloven § 8 B require the project to have a novelty element (judged against what the industry already knew), an element of creativity (new concepts, not routine work), and an element of uncertainty (about cost, timeline, or whether the expected result could be achieved). Skattestyrelsen's guidance is Den juridiske vejledning C.C.2.2.2.20, and it draws on the OECD Frascati Manual. A disclosure that never becomes a patent can still earn the deduction if this section is good.
 
-This is the block people struggle with most, so lead them:
+This is the block people struggle with most, so lead them. Use the questions Skattestyrelsen itself has said a company must be able to answer (from SKM2023.24.LSR), in plain words:
 
-- "Before you started, what did you not know would work?" Not "we had not built it yet", but "it was not known whether X was possible, because Y."
-- "What was the state of knowledge before you began?"
-- "What did you try that did not work?" Tell them failed attempts are among the strongest evidence and should not be edited out.
-- "What made this approach non-routine? What would a competent colleague following the standard playbook have done instead?"
+1. "In what way did this aim at a technological or scientific advance, not just a better product for Cmbio?" The advance is judged against the field, meaning the circle of companies doing the same kind of work, not against Cmbio's own previous approach.
+2. "Before you started, could an expert in the field have said whether this was possible, or how to do it, even after reading everything available?" If yes, there was no uncertainty in SKAT's sense. If no, that is the uncertainty; write down exactly what the expert could not have known.
+3. "Was experimentation necessary to get there?" Ask what was tested, what the possible negative outcomes were, and what would have happened if the tests had failed.
+4. "How was the uncertainty actually resolved?" The path from not knowing to knowing.
+5. "Could a trained professional have done this without the experimentation? Had others tried and failed?" Prior failed attempts, in the literature or at Cmbio, are strong evidence.
+6. "What did you try that did not work?" Failed attempts are among the strongest evidence and must not be edited out.
 
-Write these answers in the past tense, describing the situation before the work started.
+Also cover uncertainty about cost and timeline where it applied, since the Danish test accepts those as well.
 
-If, after genuine probing, there was no real uncertainty (they applied a known method competently to a new dataset), write that plainly. The IDF is still worth filing, and the IP owner needs an honest picture.
+Write the answers in the past tense, describing the state of knowledge before the work started. Use the phrasing "it was not known whether X, because Y" rather than "we had not built it yet".
+
+Two things to tell the inventor, because they shape how they answer:
+
+- Applying a known method competently to a new dataset, adding functionality using existing tools, or adapting software to a specific use does not qualify unless the process produced knowledge that materially improved the underlying method. Skattestyrelsen's own exclusion list says so. If that is what happened, write it plainly; the IDF is still worth filing and the IP owner needs an honest picture.
+- Landsskatteretten has rejected claims where the company's own description was the only evidence. Point to objective support: benchmark results, comparison against the prior method, external statements, commit history, experiment logs. Section C is stronger when every claim in it has a file behind it.
 
 ## Block 3: effort (IDF section C5)
 

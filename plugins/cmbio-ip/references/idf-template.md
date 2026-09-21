@@ -48,10 +48,10 @@ Datasets, benchmarks, comparison against the prior approach, effect sizes. Point
 
 ## C. Documentation of innovation (tax)
 
-This section exists for Skattestyrelsen. It follows the Frascati criteria: novelty, a creative element, and technical or scientific uncertainty. Write it in the past tense, describing the state of knowledge before the work started.
+This section exists for Skattestyrelsen. It follows the three project criteria in Den juridiske vejledning C.C.2.2.2.20: a novelty element judged against the industry's existing knowledge, an element of creativity, and an element of uncertainty about cost, timeline or outcome. Write it in the past tense, describing the state of knowledge before the work started.
 
 **C1. What was technically or scientifically uncertain when the work began?**
-The key question. Not "we had not built it yet" but "it was not known whether X could be achieved, because Y". If there was no genuine uncertainty, say so, and this project probably does not qualify.
+The key question. Not "we had not built it yet" but "it was not known whether X could be achieved, because Y". The test Skattestyrelsen applies: could an expert in the field, after consulting everything available, have said whether this was possible and how? If yes, there was no uncertainty. Uncertainty about cost or timeline also counts. If there was no genuine uncertainty, say so, and this project probably does not qualify.
 
 **C2. What was the state of the art before this work?**
 What existed publicly, and what the gap was.

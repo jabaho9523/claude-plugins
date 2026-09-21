@@ -31,7 +31,7 @@ Full version lives with the IP owner. This is what a skill needs to know.
 
 ## Why the IDF has a tax section
 
-Danish R&D deductions require documentation that the work was novel, involved a creative element, and had technical or scientific uncertainty at the outset (the Frascati criteria). The IDF captures this contemporaneously so it does not have to be reconstructed later. A disclosure that never becomes a patent is still valuable for this purpose.
+Danish R&D deductions under ligningsloven § 8 B require documentation that the project had a novelty element (judged against the industry's existing knowledge), an element of creativity (not routine work), and an element of uncertainty about cost, timeline or whether the result could be achieved. The criteria are set out in Den juridiske vejledning C.C.2.2.2.20 and draw on the OECD Frascati Manual. The IDF captures this contemporaneously so it does not have to be reconstructed later. A disclosure that never becomes a patent is still valuable for this purpose.
 
 ## Three rules
 
