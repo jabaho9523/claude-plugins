@@ -1,7 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "jacob-plugins",
-  "owner": { "name": "Jacob Bakholm" },
+  "owner": {
+    "name": "Jacob Bakholm"
+  },
   "metadata": {
     "description": "Personal Claude plugins: project workflow, scope, stage gates, roadmap, Cmbio IP disclosure",
     "version": "0.2.0"
@@ -10,13 +12,7 @@
     {
       "name": "project",
       "source": "./plugins/project",
-      "description": "🧭 Project workflow: setup, scope, plan, gate, roadmap. Lite mode for single tasks, full mode with stage gates.",
-      "category": "productivity"
-    },
-    {
-      "name": "cmbio-ip",
-      "source": "./plugins/cmbio-ip",
-      "description": "Cmbio invention disclosure interview (disclose) and IP owner first-pass screen (screen). Produces inventor-confirmed IDFs with Frascati tax section.",
+      "description": "\ud83e\udded Project workflow: setup, scope, plan, gate, roadmap. Lite mode for single tasks, full mode with stage gates.",
       "category": "productivity"
     }
   ]
